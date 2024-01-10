@@ -1,5 +1,5 @@
 """
-URL configuration for Demo project.
+URL configuration for FirstProj project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Demo.projOne import views
+from projOne import  views
 
 urlpatterns = [
     path('admin/', admin.site.urls),

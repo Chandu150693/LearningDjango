@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="signup/">
+    {% csrf_token %}
+    <table align="center">
+        <tr>
+            <td>
+                <input type="text" name="name" placeholder="Enter your Name" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="number" name="age" placeholder="Enter your age" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" name="dob" placeholder="Enter your dob(dd/mm/yyyy)" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="radio" name="gender" value="male"> Male &nbsp;&nbsp;
+                <input type="radio" name="gender" value="female"> Female &nbsp;&nbsp;
+                <input type="radio" name="gender" value="others"> Others
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" name="number" placeholder="Enter your Mobile Number" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="email" name="number" placeholder="Enter your email" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="checkbox" name="mother_tongue">Telugu &nbsp;&nbsp
+                <input type="checkbox" name="mother_tongue">Hindi &nbsp;&nbsp
+                <input type="checkbox" name="mother_tongue">English
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Send">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
